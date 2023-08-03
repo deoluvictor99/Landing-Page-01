@@ -17,6 +17,8 @@
     src:url(./Satoshi_Complete/Fonts/Variable/Satoshi-Variable.ttf);
 }
 
+@import 'animate.css';
+
 *{
     margin: 0;
     padding: 0;
@@ -121,6 +123,10 @@ body{
     font-family: Satoshi Variable;
 }
 
+.hideShow2{
+    display: none;
+}
+
 .head{
     display: flex;
     flex-direction: column;
@@ -142,6 +148,7 @@ body{
     background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: 4rem;
+    opacity: 1;
 }
 
 .shortText p {
@@ -684,11 +691,89 @@ footer a{
 }
 
 
+.form-wrapper{
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    background: #0a081d;
+    border-radius: 0.75rem;
+    border: 1.25px solid #303A4E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 2rem 4rem;
+    width: 25rem;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    gap: 3rem;
+}
+
+.header h1{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.header>.logo{
+    width: 3.3rem;
+    height: 3.3rem;
+}
+
+.header > .logo > img{
+    width: 100%;
+}
+
+.title-texts{
+    text-align: center;
+}
+
+.title-texts > p{
+    font-size: 1rem;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    font-size: 0.6rem;
+    width: 100%;
+    /* padding: 0 2rem; */
+}
+
+input{
+    display: block;
+    width: 100%;
+    border-radius: 0.5rem;
+    background: #222938;    
+    padding: 0.8rem;
+    border: none;
+    margin-top: 0.4rem;
+}
+
+form > button{
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 1rem 1.75rem;
+    color: #fff;
+    font-size: 1rem;
+    background: var(--gradient);
+}
 
 
-
-
-
+button{
+    cursor: pointer;
+}
 
 
 
@@ -706,6 +791,32 @@ footer a{
         display: none;
     }
 
+    .show2{
+        display: block;
+        margin-top: 4.1rem;
+        text-align: center;
+    }
+
+    .navCommunities{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .show2 > ul li{
+        border: 1px solid;
+        background: var(--new-gd);
+        padding: 1rem;
+    }
+
+    .head2{
+        margin-top: 0;
+    }
+
+    .frame > .button{
+        display: none;
+    }
+
     .navIcons{
         display: flex;
         align-items: center;
@@ -715,7 +826,6 @@ footer a{
     .navIcons img, svg{
         width: 1.5rem;
     }
-
 
     .buttons{
         flex-direction: column;
@@ -759,7 +869,6 @@ footer a{
     }
     
     .texts p{
-        margin-top: 0.7rem;
         font-size: 1.3rem;
     }
 
@@ -788,7 +897,7 @@ footer a{
     }
 
     .title > h2{
-        font-size: 2.3rem;
+        font-size: 2rem;
         margin-bottom: 1.2rem;
     }
 
@@ -803,13 +912,13 @@ footer a{
 
     .lowerContainer .secondTitle{
         width: 100%;
-        padding: 2rem 0.9rem 0;
+        padding: 2rem 0.4rem 0;
         margin: 0 auto;
         text-align: center;
     }
 
     .secondTitle > h2{
-        font-size: 1.9rem;
+        font-size: 1.4rem;
         font-weight: 400;
     }
 
@@ -817,13 +926,14 @@ footer a{
         flex-direction: column;
         gap: 2.8rem;
         align-items: center;
-        margin-top: 1.2rem;
+        margin: 1.2rem 0.3rem;
+        width: 100%;
     }
     
     .bottomContainer > div{
         width: 90% !important;
         text-align: left;
-        padding: 0 0.2rem;
+        padding: 0;
     }
 
     .bottomContainer > div p{
@@ -832,6 +942,7 @@ footer a{
     
     .bottomContainer > div p:last-child{
         font-weight: 100;
+        font-size: 0.8rem !important;
     }
 
     .lowerContainer > .oval{
