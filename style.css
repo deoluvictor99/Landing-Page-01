@@ -1,0 +1,965 @@
+:root{
+    --primary: #fcfcfd;
+    --a-linear-gd: linear-gradient(138deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.08) 100%);
+    --primary-grey-choices-0: #FCFCFD;
+    --primary-grey-choices-10: #F9FAFB;
+    --primary-grey-choices-20: #F2F4F7;
+    --primary-grey-choices-40: #D0D5DD;
+    --primary-grey-choices-90: #1D2939;
+    --gray-pallete-100: #fff;
+    --new-gd: linear-gradient(313deg, rgba(24, 38, 68, 0.39) 0%, rgba(5, 5, 16, 0.54) 100%);
+    --gradient: linear-gradient(134deg, #174AFF 11.98%, #00D9AC 100%);
+    --bg: linear-gradient(313deg, rgba(24, 38, 68, 0.39) 0%, rgba(5, 5, 16, 0.54) 100%, rgba(5, 5, 16, 0.33) 100%);
+}
+
+@font-face{
+    font-family: Satoshi Variable;
+    src:url(./Satoshi_Complete/Fonts/Variable/Satoshi-Variable.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.3rem 2.5rem;
+    justify-content: space-between;
+    align-items: center;
+    background:  var(--new-gd);  
+    -webkit-backdrop-filter: blur(88px);
+    backdrop-filter: blur(88px);
+    background-color: #060512;
+}
+
+.logo{
+    background: var(--bg);   
+    width: 3.8125rem;
+    height: 3.5625rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    /* margin-right: 6rem; */
+}
+
+.logo>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.frame{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Satoshi Variable;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: var(--primary-grey-choices-10);
+    gap: 3rem;
+}
+
+.navIcons{
+    display: none;
+}
+
+.frame > .navLinks{
+    display: flex;
+}
+
+.frame > .navLinks > ul{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    white-space: nowrap;
+}
+
+.frame > .navLinks > ul > li:last-child > a{
+    display: flex;
+}
+
+ul{
+    list-style: none;
+}
+
+button{
+    border: none;
+}
+
+.button > button{
+    display: flex;
+    padding: 1rem 1.5rem 1rem 1.75rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 1.75rem;
+    background: var(--gradient);
+    color: var(--primary-grey-choices-0);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1rem; 
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
+
+body{
+    background-color: #060512;
+    font-family: Satoshi Variable;
+}
+
+.head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #F9FAFB;
+    margin-top: 6.5rem;
+}
+
+.mainTitle h1{
+    max-width: 38.0625rem;
+    text-align: center;
+    font-family: Satoshi Variable;
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 115%; 
+    background: linear-gradient(159deg, #FCFCFD 0%, #E1F7EF 92.19%, #DFF6F6 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 4rem;
+}
+
+.shortText p {
+    color: var(--primary-grey-choices-20);
+    text-align: center;
+    font-family: Satoshi Variable;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    max-width: 29.25rem;
+    padding: 0 1rem;
+    margin-top: 0.87rem;
+}
+
+.buttons{
+    margin-top: 3.81rem;
+    display: flex;
+    gap: 2rem;
+}
+
+
+.buttons button{
+    display: flex;
+    width: 14.6875rem;
+    padding: 1rem 1.75rem 1rem 2rem;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4rem;
+}
+
+
+.buttons > button > p{
+    color: var(--gray-pallete-100);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem;
+}
+
+.buttons > button > svg{
+    width: 1.5rem;
+    height: 1.5rem;
+    flex-shrink: 0;
+}
+
+.buttons > button:first-child{
+    background: var(--gradient);
+}
+
+.buttons > button:last-child{
+    border: 0.06rem solid  #0094d9;
+    border-radius: 4rem;
+    background-color:var(--gradient);
+} 
+
+.buttons > button:last-child > p{
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.firstFrame{
+    padding: 3rem 1rem 3.7rem;
+    margin-top: 5.75rem;
+    border: 1px solid #fff;
+    background: var(--bg);
+    border-image: var(--gradient) 1 1 repeat;
+    border-radius: 0.5rem;
+    -webkit-backdrop-filter: blur(1.5rem);
+    backdrop-filter: blur(1.5rem);
+    position: relative;
+}
+
+.firstFrame h2{
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.texts{
+    display: flex;
+    align-items: center;
+    bottom: 50%;
+}
+
+.texts div{
+    text-align: center;
+    font-family: Satoshi Variable;
+    font-style: normal;
+    font-weight: 400;
+    background: var(--gradient, linear-gradient(134deg, #174AFF 11.98%, #00D9AC 100%));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0rem 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.firstFrame div span{
+    font-size: 3.1rem;
+    margin-bottom:0.5rem ;
+}
+
+.ovalShape{
+    width: 45.6875rem;
+    height: 3.8125rem;
+    flex-shrink: 0;
+    border-radius: 35.6875rem;
+    background: rgba(0, 191, 217, 0.79);
+    filter: blur(168px);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    position: relative;
+    gap:3.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+}
+
+.ellipse{
+    width: 40.5rem;
+    height: 20.5rem;
+    flex-shrink: 0;
+    border-radius:30.5625rem 30.5625rem 0 0 ;
+    background-color: #060512;
+    margin-top: 5.06rem;
+    z-index: 1;
+}
+
+.title{
+    text-align: center;
+    padding: 0 1rem;
+    width: 24rem;
+}
+
+.community{
+    padding: 0;
+    width: 26rem;
+}
+
+.perform{
+    padding: 0;
+}
+
+.better{
+    padding: 0;
+}
+
+.title h2{
+    text-align: center;
+    font-family: Satoshi Variable;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 115%;
+    background: linear-gradient(159deg, #FCFCFD 0%, #ECDFF6 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.vectorContainer{
+    position: relative;
+    width: 26.5rem;
+    height: 22rem;
+    border-radius: 0.5rem;
+    background: var(--bg);
+    -webkit-backdrop-filter: blur(24px);
+    backdrop-filter: blur(24px);
+}
+
+.vectorContainer>svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 17rem;
+    height: 17rem;
+}
+
+.lowerContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+    color: #ECDFF6;
+}
+
+.lowerContainer .secondTitle{
+    width: 25rem;
+    padding: 2rem 0 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.lowerContainer > .build > h2{
+    color: var(--primary-grey-choices-20);
+    text-align: center;
+    font-family: Satoshi Variable;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+.bottomContainer{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    gap: 7rem;
+}
+
+.bottomContainer div{
+    width: 15rem;
+    text-align: left;
+}
+
+.bottomContainer svg{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.bottomContainer div>p:first-child{
+    color: #FFF;
+    font-family: Satoshi Variable;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    margin-bottom: 0.6rem;
+    display: flex;
+    align-items: center;
+    gap:0.2rem;
+}
+
+.bottomContainer div:nth-child(2){
+    width: 13rem;
+}
+
+.bottomContainer div:last-child{
+    width: 14rem;
+}
+
+.bottomContainer div>p{
+    line-height: 140%;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+}
+
+.oval{
+    width: 50%;
+    height: 3rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -1.5rem ;
+    background: #7A00D9;
+    filter: blur(100px);
+}
+
+.oval2{
+    background: rgba(217, 208, 0, 0.81);
+    filter: blur(100px);
+}
+
+.lowerContainer .thirdSection{
+    width: 32rem;
+}
+
+.btns{
+    margin-top: 3.5rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.buttons2{
+    margin-top: 0;
+}
+
+.oval4{
+    background: rgba(0, 204, 217, 0.53);
+    /* filter: blur(100px); */
+}
+
+.lastEllipse{
+    margin-top: 5rem;
+}
+
+.shapeWrapper{
+    color: var(--primary-grey-choices-10);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.topHalf, .bottomHalf{
+    display: flex;
+    gap: 2rem;
+}
+
+
+.squareContainer, .circle2, .circle1{
+    width: 60%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: end;
+    padding: 6rem 9rem 3rem;
+}
+
+.sqr{
+    width: 7rem;
+    height: 6.5rem;
+    flex-shrink: 0;
+    border: 1px solid var(--primary-grey-choices-90);
+    background: var(--new-gd);
+    position: absolute;
+    top: 8.5rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.75rem;
+}
+
+.sqr2{
+    top: 9.5rem;
+    left: 53.5%;
+}
+
+.triangle{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4.8rem 4rem 2rem;
+    text-align: center;
+}
+
+.shapeWrapper p {
+    color: var(--primary-grey-choices-30, #EAECF0);
+    text-align: center;
+    font-family: Satoshi Variable;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 1.4625rem */
+}
+
+.circle1, .circle2{
+    position: relative;
+    padding: 15rem 5rem 2rem;
+}
+
+.cir{
+    width: 7rem;
+    height: 6.5rem;
+    flex-shrink: 0;
+    border-radius: 50%;
+    border: 1px solid var(--primary-grey-choices-90);
+    background: var(--new-gd);
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.cir1{
+    top: 8.5rem;
+    left: 50%;
+}
+
+.cir2{
+    top: 9.5rem;
+    left: 53%;
+}
+
+.squareContainer, .triangle, .circle1, .circle2{
+    background: var(--bg);
+    border-radius: 0.5rem;
+}
+
+.becomeWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+    padding: 1rem;
+}
+
+.image{
+    width: 30.6rem;
+    height: 23rem;
+    border-radius: 0.5rem;
+    margin: 4rem;
+    margin-left: 5rem;
+}
+
+.image > img{
+    width: 100%;
+    height: 100%;
+}
+
+.text{
+    color: var(--primary-grey-choices-20);
+    text-align: center;
+    font-family: Satoshi Variable;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 123%;
+    width: 30.6rem;
+    padding: 0 1.5rem;
+}
+
+.icons{
+    color: var(--primary-grey-choices-40);
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; 
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 60%;
+    margin: 3rem 0;
+}
+
+
+.icon-text {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.button > .get-started{
+    padding: 1.2rem 3.4rem;
+    margin-top: 4rem;
+}
+
+
+
+footer{
+    color: #fff;
+    background-image: url(./public/exx-pattern-1\ 2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3rem 0;
+    margin-top: 4rem;
+}
+
+.content{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    padding: 2rem;
+}
+
+.left-side{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.footer-logo{
+    width: 3.2rem;
+    height: 3.5rem;
+}
+
+.footer-logo > img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.text-content p{
+    color: var(--primary-grey-choices-40);
+    text-align: center;
+    font-family: Satoshi Variable;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+a{
+    color: #fff;
+}
+
+footer a{
+    color: var(--primary-grey-choices-0, #FCFCFD);
+    font-family: Satoshi Variable;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem; /* 100% */
+}
+
+.right-side{
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+.general, .apply{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.general > ul, .apply > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 480px) {
+    nav{
+        padding: 1rem 2.1rem;
+    }
+
+    .logo{
+        width: 2.4rem;
+        height: 2.1rem;
+    }
+
+    .frame{
+        display: none;
+    }
+
+    .navIcons{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .navIcons img, svg{
+        width: 1.5rem;
+    }
+
+
+    .buttons{
+        flex-direction: column;
+    }
+
+    .mainTitle{
+        padding: 0 1.1rem;
+    }
+
+    .mainTitle h1{
+        font-size: 2.1rem;
+        margin-top: 2rem;
+    }
+
+    .shortText{
+        padding: 0 2.2rem;
+    }
+
+    .shortText p{
+        font-size: 0.9rem;
+    }
+
+    .buttons{
+        margin-top: 3rem;
+        gap: 1rem;
+    }
+
+    .firstFrame{
+        width: 75%;
+        padding: 1.7rem 0.2rem;
+    }
+
+    .firstFrame .texts{
+        flex-direction: column-reverse;
+        gap: 3rem;
+    }
+    
+    .texts h2{
+        font-size: 2.8rem;
+        font-weight: 400;
+    }
+    
+    .texts p{
+        margin-top: 0.7rem;
+        font-size: 1.3rem;
+    }
+
+    .ovalShape{
+        top: 50%;
+        width: 100%;
+    }
+
+    .container{
+        position: relative;
+        gap: 3.25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+    }
+    
+    .ellipse{
+        width: 22rem;
+        height: 11rem;
+        margin-top: 2.6rem;
+    }
+
+    .title{
+        width: 95%;
+    }
+
+    .title > h2{
+        font-size: 2.3rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .vectorContainer{
+        width: 90%;
+    }
+
+    .lowerContainer{
+        gap: 2rem;
+        position: relative;
+    }
+
+    .lowerContainer .secondTitle{
+        width: 100%;
+        padding: 2rem 0.9rem 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .secondTitle > h2{
+        font-size: 1.9rem;
+        font-weight: 400;
+    }
+
+    .bottomContainer{
+        flex-direction: column;
+        gap: 2.8rem;
+        align-items: center;
+        margin-top: 1.2rem;
+    }
+    
+    .bottomContainer > div{
+        width: 90% !important;
+        text-align: left;
+        padding: 0 0.2rem;
+    }
+
+    .bottomContainer > div p{
+        font-size: 1.4rem !important;
+    }
+    
+    .bottomContainer > div p:last-child{
+        font-weight: 100;
+    }
+
+    .lowerContainer > .oval{
+        width: 100%;
+    }
+
+    .lastEllipse{
+        margin-top: 3rem;
+    }
+
+    section.btns{
+        margin-top: 2rem;
+    }
+
+    .shapeWrapper{
+        width: 100%;
+    }
+
+    .shapeWrapper .topHalf, .bottomHalf{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .squareContainer, .circle2, .triangle, .circle1{
+        width: 90%;
+        padding: 1rem;
+    }
+
+    div.squareContainer, div.triangle, div.circle{
+        height: 21rem;
+    }
+
+    div.triangle{
+        display: flex;
+        flex-direction: column;
+        /* align-items: flex-end; */
+        justify-content: space-between;
+    }
+
+    div.triangle svg{
+        width: 11rem;
+        height: auto;
+        margin: 3.4rem 0 0;
+    }
+
+    .sqr2{
+        left: 54.5%;
+    }
+
+    .become{
+        margin-top: 2rem;
+    }
+
+    .becomeWrapper{
+        margin-top: 2rem;
+    }
+
+    .becomeWrapper .image{
+        width: 100%;
+        margin: 0;
+    }
+
+    .becomeWrapper>.image>img{
+        width: calc(100% - 0.8rem);
+        height: 19rem;
+        margin-left: 1.3rem;
+    }
+
+    .becomeWrapper > .text{
+        width: 100%;
+    }
+
+    .becomeWrapper > .text > p{
+        font-size: 1.1rem;
+    }
+
+    .becomeWrapper > .icons{
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 2rem auto;
+        gap: 2.6rem;
+        width: auto;
+    }
+
+    .becomeWrapper > .button button{
+        margin-top: 1rem;
+    }
+
+    footer{
+        background-image: url(./public/exx-pattern-1\ 3.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 3rem 0;
+        margin-top: 10rem;
+    }
+
+    footer > .content{
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0 0.4rem;
+        width: 80%;
+    }
+
+    footer .left-side{
+        display: flex;
+        gap: 0;
+        text-align: left;
+    }
+
+    footer .text-content p{
+        text-align: left;
+        font-size: 0.9rem;
+    }
+
+    footer .right-side{
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    footer .general, .apply{
+        gap: 1rem;
+    }
+
+}
+
+
+
+
+
+
+
