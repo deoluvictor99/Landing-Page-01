@@ -29,5 +29,5 @@ const header = document.querySelector(".head");
 
 hamburgerMenuBtn.addEventListener('click', () => {
     navLinks.classList.toggle("show2");
-    header.classList.toggle("head2")
+    header.classList.toggle("head2");
 })
