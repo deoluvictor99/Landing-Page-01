@@ -476,7 +476,6 @@ body{
     gap: 2rem;
 }
 
-
 .squareContainer, .circle2, .circle1{
     width: 60%;
     position: relative;
@@ -614,8 +613,6 @@ body{
     margin-top: 4rem;
 }
 
-
-
 footer{
     color: #fff;
     background-image: url(./public/exx-pattern-1\ 2.png);
@@ -689,7 +686,6 @@ footer a{
     flex-direction: column;
     gap: 1rem;
 }
-
 
 .form-wrapper{
     color: #fff;
@@ -768,14 +764,22 @@ form > button{
     color: #fff;
     font-size: 1rem;
     background: var(--gradient);
+    border-radius: 4rem;
 }
 
+form > .home{
+    border: 0.06rem solid  #0094d9;
+    border-radius: 4rem;
+    background-color:var(--gradient);
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 button{
     cursor: pointer;
 }
-
-
 
 @media only screen and (max-width: 480px) {
     nav{
